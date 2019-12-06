@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "vuejs: chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/*",
+      "breakOnLoad": true,
+      "sourceMapPathOverrides": {
+        "webpack:///@": "${webRoot}/*",
+        "webpack:///@@": "${webRoot}/*",
+        "webpack:///~": "${webRoot}/*",
+        "webpack:///~~": "${webRoot}/*"
+      }
+    },
+    {
+      "name": "nuxt: chrome",
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/node_modules/nuxt/bin/nuxt",
+      "stopOnEntry": false,
+      "args": ["dev"],
+      "cwd": "${workspaceRoot}",
+      "sourceMaps": true,
+      "env": {
+        "NODE_ENV": "development",
+        "DEBUG": "nuxt:*,app"
+      }
+    }
+  ]
+}

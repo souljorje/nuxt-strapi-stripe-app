@@ -1,0 +1,48 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "UI of my app",
+  "author": "Georgiy Bukharov",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "prettier": "prettier --config .prettierrc --ignore-path .prettierignore --write \"**/*.{json,scss,css,md,js,vue}\"",
+    "lint": "eslint -f stylish --ext .js,.vue --ignore-path .eslintignore .",
+    "lintfix": "eslint -f stylish --fix --ext .js,.vue --ignore-path .eslintignore ."
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.7.4",
+    "@nuxtjs/apollo": "^4.0.0-rc18",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "add": "^2.0.6",
+    "cookie-universal-nuxt": "^2.0.19",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "lodash.isplainobject": "^4.0.6",
+    "nuxt": "^2.0.0",
+    "strapi-sdk-javascript": "^0.3.3",
+    "vue-stripe-elements-plus": "^0.3.2",
+    "yarn": "^1.21.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.7.4",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-vue": "^6.0.1",
+    "lint-staged": "^9.5.0",
+    "nuxt-imagemin": "^1.0.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  }
+}
